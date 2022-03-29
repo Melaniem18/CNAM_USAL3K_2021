@@ -40,6 +40,7 @@ CREATE TABLE transaction_history
     FOREIGN KEY (t_account_id) REFERENCES bank_accounts(id) 
 ) Engine=InnoDb;
 
+
 /*
 	INSERTION DES DONNEES DANS LES TABLES
 */
@@ -66,11 +67,6 @@ VALUES
 (7, 'Steeve', 3),
 (8, 'Léa', 2),
 (9, 'Justine', 3);
-
-INSERT INTO loans
-(`loans_id`, `loans_date`, `loans_amount`, `loans_duration`, `loans_state`, `id`) 
-VALUES 
-(1, "2021-07-05", 5000, 23, "A", 1);
 
 
 /*
